@@ -1,128 +1,185 @@
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-    <link href="style.css" rel="stylesheet">
 
-    <title>Portfólio</title>
-    
-</head>
-<body>
-    <div class="container">
-        <div id="header">
-            Portfolio
+
+<!DOCTYPE html><!--"HTML:5 + TAB" cria automaticamente o código-->
+<html lang="en">
+
+    <head>
+        
+        <meta charset="UTF-8"><!--"UTF_8" página será exibida em português-->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Curriculum</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Hubballi&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+        <!--acima é a junção de mais de uma fonte a serem utilizadas no código-->
+        
+        <script src="https://kit.fontawesome.com/014e77f7cd.js" crossorigin="anonymous"></script>
+        <!--pegar emoticons/ ícones de desenho-->
+        
+        <style>
+        
+        body {
+            background-color: aliceblue;
+        }
+        #header {
+            background-color:turquoise;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            font-family: 'Hubballi', cursive;
+        }
+        #nameAndTitle {
+            background-color:aliceblue;
+            width: 500px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        #nameAndTitle h1, h2 {
+            margin:0;
+        }
+        h1, h2, h3 {
+            text-transform: uppercase;
+        }
+        #contact {
+            list-style-type: none;
+
+        }
+        #contact i {
+           width: 30px; 
+           color: turquoise;
+        }
+        #container {
+            display: grid;
+            grid-template-columns: 30% auto;%;
+            grid-column-gap: 20px;
+
+        }
+        #sidebar, #content {
+            display: flex;
+            flex-direction: column;
+            row-gap: 20px;
+
+        }
+        .card h3 {
+            font-family: 'Hubballi', cursive;
+        }
+        .card {
+            font-family: Montserrat;
+            border:1px solid rgb(212, 212, 212);
+            border-radius: 15px;
+            padding: 20px;
+        }
+
+        </style>
+
+    </head>
+    <body>
+        <div id="header"> 
+            <div id="nameAndTitle">
+                <h1>IASMIN LUANA HENRIQUE MUNIZ</h1>
+                <h2>Estágio</h2>
+            </div>
         </div>
-        <div id="menu">
-            <ul>
-                <li><a href="#headerCta">Home</a></li>
-                <li><a href="#services">Sobre Mim</a></li>
-                <li><a href="#contact">Contato</a></li>
-                <li><a href="#portfolioTitle">Portfólio</a></li>
-            </ul>
-        </div>
-    </div>
-    <div class="container">
-        <div id="headerCta">
-            <h1>
-                Olá, meu nome<br>
-                é Iasmin
-            </h1>
-            <p class="gray">
-                Sou estudante de programação e desenvolvimento,<br> 
-                e neste site lhes apresento meu portfólio<br> 
-                com alguns projetos realizados e outras informações.
-            </p>
-            <a target="_blank" alt="linkedin" href="https://www.linkedin.com/in/iasmin-muniz/">
-                <img src="C:\IASMIN\DNC-html_css_js\img\linked in.png">
-            </a>
-           
-        </div>
-        <div id="headerImg">
-            <img src="C:\IASMIN\DNC-html_css_js\img\iasmin4.png">
-        </div>
-    </div>
-    <div class="container" id="clients">
-        <div id="headerClientText">
-            SKILLS
-        </div>
-        <div class="headerLogo">
-            <img alt="chj" style="width: 190px" src="C:\IASMIN\DNC-html_css_js\img\css_html_js_semfundo.png">
-        </div>
-        <div class="headerLogo">
-            <img alt="python" src="C:\IASMIN\DNC-html_css_js\img\python_semfundo.png">
-        </div>
-        <div class="headerLogo">
-            <img alt="tresC" src="C:\IASMIN\DNC-html_css_js\img\tres_C_semfundo.png">
-        </div>
-        <div class="headerLogo">
-            <img alt="sql" style="width: 75px" src="C:\IASMIN\DNC-html_css_js\img\sql.jpg">
-        </div>
-    </div>
-    <div class="container textCenter">
-        <div id="services">
-            <h2 class="red">Saiba mais</h2>
-            <h1 class="black">Sobre Mim</h1>
-        </div>
-    </div>
-    <div class="container" id="services">
-        <div class="textCenter">
-            <a target="_blank" href="https://iasminmuniz.github.io/Curriculo-Atualizado/">
-                <img src="C:\IASMIN\DNC-html_css_js\img\curriculo_2.png"></a>
-            <p class="gray">
-                Sou uma pessoa dinâmica, criativa, flexível e adaptável, apaixonada por tecnologia, inovação e modernidade, que valoriza muito o trabalho em equipe e o reconhecimento das pessoas, além de me considerar uma boa líder para lidar com um grupo.Também ressalto como fortes características minha determinação, persistência e proatividade, na qual sou muito reconhecida pelos demais como sendo bons traços de minha personalidade. Tenho em mim a aptidão para administração e organização, que fazem com que as pessoas depositem em mim a confiança para cuidar de determinados assuntos importantes inclusive os que envolvem a questão financeira.
-                Tenho como objetivo atuar no mercado na área da tecnologia, inicialmente como Desenvolvedora Front-End, Back-End ou até mesmo Fullstack, mas também estou aberta para outras possibilidades para adquirir mais conhecimento de acordo com a oportunidade.
-            </p>
-            <a target="_blank" alt="github" href="https://github.com/IasminMuniz">
-                <img style="width: 100px" src="C:\IASMIN\DNC-html_css_js\img\github_semfundo.png">
-            </a>
-        </div>
-    </div>
-    <div class="container" id="contact">
-        <div id="contactImg">
-            <img src="C:\IASMIN\DNC-html_css_js\img\imagem_acordo.jpg">
-        </div>
-        <div id="contactForm">
-            <h2 class="red"></h2>
-            <h1 class="black">Contato</h1>
-            <p class="gray">
-                Digite aqui seu endereço de e-mail.<br> 
-                Eu entrarei em contato para maiores informações.
-            </p>
-            <form action="https://formspree.io/f/xaykwwop" method="POST">
-                <p><input placeholder="Seu e-mail" type="text" name="contactEmail" required="required"></p>
-                <button type="submit">Enviar</button>
-            </form>
+        <div id="container">
+            <div id="sidebar">
+                 <div class="card">
+                    <h3>Contato</h3>
+                    
+                    <ul id="contact">
+                        <li><i class="fa-solid fa-envelope"></i> iasminlhmuniz@gmail.com</li>
+                        <li><i class="fa-solid fa-phone"></i> (11) 94047-8980</li>
+                        <li><i class="fa-solid fa-location-dot"></i> Rua Eli - Vila Maria Baixa</li>
+                        <!--ícones de imagem são inseridos dentro das tags, neste caso "LI"-->
+                    </ul>
                 
-        </div>
-    </div>
-    <div class="container" id="portfolioTitle">
-        <div>
-            <h2 class="red">Conheça o meu</h2>
-            <h1 class="black">Portfólio</h1>
-        </div>
-    </div>
-    <div class="container">
-        <div class="portfolioImg">
-            <a 
-           target="_blank" href="https://iasminmuniz.github.io/Universidade-UNES/">
-                <img src="https://github.com/IasminMuniz/Universidade-UNES/blob/main/img/capa.png?raw=true">
-            </a>
-        </div>   
-        <div class="portfolioImg">
-            <a target="_blank" href="https://iasminmuniz.github.io/Italian-Bistro/">
-                <img src="https://github.com/IasminMuniz/Italian-Bistro/blob/main/img/imagem_banner_home.jpg?raw=true">
-            </a>
-        </div>   
-        <div class="portfolioImg">
-            <img src="C:\IASMIN\DNC-html_css_js\img\imagem_embreve.png">
-        </div>    
-    </div>
-</body>
+                </div> 
+                
+                <div class="card">
+                    <h3>Skills</h3>
+                   
+                    <ul><!--"IDs" sempre dentro das tags-->
+                        <li>Lógica Programação</li>
+                        <li>Python</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Javascript</li>
+                        <li>SQL</li>
+                        <li>PHP</li>
+                        
+                    </ul>
+                
+                </div> 
+                <div class="card">
+                    <h3>FORMAÇÃO ACADÊMICA</h3>
+                    <ul>
+                        <li>TECNOLOGIA EM ANÁLISE E DESENVOLVIMENTO DE SISTEMA<br><br>
+                        - Centro Universitário Anhanguera Pitágoras Ampli (Cursando)</li><br>
+                        <li>TECNOLOGIA EM ANÁLISE E DESENVOLVIMENTO DE SISTEMAS<br><br>
+                        - Faculdade Impacta de Tecnolgia (2018)</li>
+                        
+                    </ul>
+                </div> 
+            </div>
+                
+            <div id="content">
+                <div class="card">
+                    <h3>Sobre mim</h3>
+                    <p>
+                        &nbsp;&nbsp;&nbsp;    Estudante do 1º semestre do curso Tecnologia em Análise e Desenvolvimento de Sistemas no módulo
+                        EAD, no Centro Universitário Anhanguera Pitágoras Ampli, porém, já cursei um ano do mesmo curso em
+                        Faculdade Impacta de Tecnologia no módulo presencial na região da Barra Funda.<br>
+                        &nbsp;&nbsp;&nbsp;    Busco uma oportunidade de estagiar na área da tecnologia para adquirir, aprimorar e expandir meus
+                        conhecimentos vistos em aula e aplicá-los na prática, no intuito de desenvolver meu potencial em
+                        programação e desenvolvimento na qual é uma área que muito me identifico. Como ainda não possuo
+                        experiência profissional nesta área, busco me destacar através de cursos extracurriculares que me
+                        auxiliam de forma técnica e teórica para compreender um pouco mais do funcionamento de cada ramo
+                        da tecnologia.<br>
+                        &nbsp;&nbsp;&nbsp;    Já possuo experiência profissional da área administrativa, porém, como minha paixão sempre foi
+                        voltada para a área tecnológica, estou buscando migrar para a mesma onde sempre quis exercer
+                        função.
+                    </p>
+                </div>
+                
+                <div class="card">
+
+                    <h3>EXPERIÊNCIA PROFISSIONAL</h3>
+                    <p><b>
+                        CONFECÇÕES FERRAZ LTDA. (02/2016 - 04/2022)</b><br><br>
+                            - Responsável pelo lançamento de documentos no sistema (LINX);<br>
+                            - Emissão de notas fiscais entradas e saídas, DANFE;<br>
+                            - Auxílio ao cliente por telefone, e-mail, e na implantação do SAT;<br>
+                            - Retenção e apuração de Impostos, arquivos e protocolos;<br>
+                            - Recebimento e escrita fiscal – que é a rotina de receber e escriturar todas as notas fiscais que passam pela empresa no Livro fiscal;<br>
+                            - Conferência de toda documentação fiscal;<br>
+                            - Lançamentos fiscais de entradas e saídas;<br>
+                            - Emissão de notas fiscais de devolução, remessa para conserto e industrialização;
+                        </p>
+                        <ul>
+                            <li>Auxiliar de Escrita Fiscal</li>
+                        </ul>
+                        <p>
+                            <b>ARPOL CONFORTO TÉRMICO (06/2014 - 10/2014)</b><br><br>
+                            - Atualização de planilhas com transações diárias;<br>
+                            - Acompanhamento e conciliação de extratos bancários;<br>
+                            - Criação de relatórios de custos e pagamentos financeiros;<br>
+                            - Processamento de pagamento de impostos (PIS/ COFINS/ ICMS/ entre outros);<br>
+                            - Registro de contas a pagar e receber;<br>
+                            - Controle e emissão de talão de cheques;<br>
+                            - Contratação de serviços;<br>
+                            - Organização de solicitação de compras internas;<br>
+                            - Negociação com fornecedores;<br>
+                            - Pesquisa de fornecedores;<br>
+                            - Realização e acompanhamento de pedidos de compras;<br>
+                            - Relatório de compras;<br>
+                            - Cotação de materiais;
+                        </p>
+                            <ul>
+                                <li>Auxiliar Administrativo</li>
+                            </ul>
+                </div>
+            </div>
+
+    </body>
 </html>

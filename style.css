@@ -20,10 +20,12 @@
             margin: 0 0 5px 0; 
         }
         #nameAndTitle h2 {
-            color: #38bdf8;
+            color: #0284c7; /* Um azul analítico forte e moderno */
+            font-family: 'Inter', 'Segoe UI', sans-serif; /* Fonte geométrica e limpa */
             font-size: 16px;
-            margin: 0; 
-            letter-spacing: 1px;
+            font-weight: 600; /* Deixa a letra ligeiramente mais encorpada */
+            letter-spacing: 1.5px; /* Espaçamento elegante entre as letras */
+            margin-top: 8px; /* Dá uma leve separação do seu nome */
         }
         h1, h2, h3 {
             text-transform: uppercase;

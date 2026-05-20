@@ -1,4 +1,2 @@
-# Curriculo-Atualizado
-
-#Curriculo em HTML e CSS Atualizado ***Iasmin Luana Henrique Muniz***
+# Curriculo ***Iasmin Luana Henrique Muniz***
 

@@ -22,7 +22,7 @@
         #nameAndTitle h2 {
             color: #38bdf8;
             font-size: 16px;
-            margin: 0; /* Zera a margem do h2 perfeitamente */
+            margin: 0; 
             letter-spacing: 1px;
         }
         h1, h2, h3 {

@@ -3,19 +3,27 @@
             background-color: aliceblue;
         }
         #header {
-            background-color:turquoise;
+            background-color:#0f172a;
             margin-top: 50px;
             margin-bottom: 50px;
-            font-family: 'Hubballi', cursive;
+            padding: 20px 0;
+            font-family: 'Inter', 'Segoe UI', sans-serif;
         }
         #nameAndTitle {
-            background-color:aliceblue;
-            width: 500px;
+            width: 600px;
             margin: 0 auto;
             text-align: center;
         }
-        #nameAndTitle h1, h2 {
-            margin:0;
+        #nameAndTitle h1 {
+            color: #ffffff;
+            font-size: 28px;
+            margin: 0 0 5px 0; 
+        }
+        #nameAndTitle h2 {
+            color: #38bdf8;
+            font-size: 16px;
+            margin: 0; /* Zera a margem do h2 perfeitamente */
+            letter-spacing: 1px;
         }
         h1, h2, h3 {
             text-transform: uppercase;

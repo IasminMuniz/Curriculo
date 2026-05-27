@@ -1,175 +1,252 @@
-
-
-<!DOCTYPE html><!--"HTML:5 + TAB" cria automaticamente o código-->
-<html lang="en">
+<!DOCTYPE html>
+<html lang="pt-BR">
 
     <head>
-        
-        <meta charset="UTF-8"><!--"UTF_8" página será exibida em português-->
+        <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Currículo</title>
+        <title>Currículo - Iasmin Luana Henrique Muniz</title>
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Hubballi&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-        <!--acima é a junção de mais de uma fonte a serem utilizadas no código-->
-        
+        <link href="https://fonts.googleapis.com/css2?family=Hubballi&family=Montserrat:wght@400;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+
         <script src="https://kit.fontawesome.com/014e77f7cd.js" crossorigin="anonymous"></script>
-        <!--pegar emoticons/ ícones de desenho-->
-        
+
         <style>
-        
+        /* Reset básico para consistência */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
         body {
             background-color: #F0F4F8;
+            font-family: 'Montserrat', sans-serif;
+            color: #334155;
+            padding-bottom: 50px;
         }
+
+        /* Header Responsivo */
         #header {
-            background-color:#0f172a;
-            margin-top: 50px;
-            margin-bottom: 50px;
-            padding: 20px 0;
-            font-family: 'Inter', 'Segoe UI', sans-serif;
-        }
-        }
-        #nameAndTitle {
-            width: 600px;
-            margin: 0 auto;
+            background-color: #0f172a;
+            padding: 40px 20px;
+            margin-bottom: 30px;
             text-align: center;
         }
+
+        #nameAndTitle {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
         #nameAndTitle h1 {
             color: #ffffff;
-            font-size: 28px;
-            margin: 0 0 5px 0; 
-        }
-        #nameAndTitle h2 {
-            color: #0284c7; /* Um azul analítico forte e moderno */
-            font-family: 'Inter', 'Segoe UI', sans-serif; /* Fonte geométrica e limpa */
-            font-size: 16px;
-            font-weight: 600; /* Deixa a letra ligeiramente mais encorpada */
-            letter-spacing: 1.5px; /* Espaçamento elegante entre as letras */
-            margin-top: 8px; /* Dá uma leve separação do seu nome */
-        }
-        h1, h2, h3 {
+            font-family: 'Inter', sans-serif;
+            font-size: 24px;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
             text-transform: uppercase;
         }
-        #contact {
-            list-style-type: none;
 
+        #nameAndTitle h2 {
+            color: #0284c7;
+            font-family: 'Inter', sans-serif;
+            font-size: 14px;
+            font-weight: 600;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
         }
-        #contact i {
-           width: 30px; 
-           color: #0f172a;
-        }
+
+        /* Container Principal com Grid Responsivo (Mobile-First) */
         #container {
             display: grid;
-            grid-template-columns: 30% auto;%;
-            grid-column-gap: 20px;
-
+            grid-template-columns: 1fr; /* Uma coluna por padrão (celular) */
+            gap: 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
         }
+
         #sidebar, #content {
             display: flex;
             flex-direction: column;
-            row-gap: 20px;
-
+            gap: 20px;
         }
+
+        /* Estilização dos Cards */
+        .card {
+            background-color: #ffffff;
+            border: 1px solid rgb(212, 212, 212);
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+        }
+
         .card h3 {
             font-family: 'Hubballi', cursive;
-        }
-        .card {
-            font-family: Montserrat;
-            border:1px solid rgb(212, 212, 212);
-            border-radius: 15px;
-            padding: 20px;
+            font-size: 24px;
+            color: #0f172a;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            border-bottom: 2px solid #0284c7;
+            padding-bottom: 5px;
+            display: inline-block;
         }
 
+        /* Lista de Contatos */
+        #contact {
+            list-style-type: none;
+        }
+
+        #contact li {
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            font-size: 14px;
+            word-break: break-all; /* Evita que o email quebre o layout em telas muito pequenas */
+        }
+
+        #contact i {
+            width: 30px;
+            color: #0284c7;
+            font-size: 16px;
+        }
+
+        /* Listas de Skills e Formação */
+        .card ul {
+            list-style-position: inside;
+            padding-left: 5px;
+        }
+
+        .card li {
+            font-size: 14px;
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+
+        /* Parágrafos do Conteúdo */
+        #content p {
+            font-size: 14px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        #content p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* Mídia Query: Para telas maiores (Tablets grandes e Desktops) */
+        @media (min-width: 768px) {
+            #header {
+                margin-top: 50px;
+                border-radius: 8px;
+                max-width: 1000px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            #nameAndTitle h1 {
+                font-size: 32px;
+            }
+
+            #nameAndTitle h2 {
+                font-size: 16px;
+            }
+
+            #container {
+                grid-template-columns: 35% 65%; /* Divide em duas colunas no desktop */
+            }
+        }
         </style>
 
     </head>
     <body>
+
         <div id="header"> 
             <div id="nameAndTitle">
-                <center><h1>IASMIN LUANA HENRIQUE MUNIZ</h1></center>
-                <center><h2>ANÁLISE DE DADOS | BUSINESS INTELLIGENCE</h2></center>
+                <h1>Iasmin Luana Henrique Muniz</h1>
+                <h2>Análise de Dados | Business Intelligence</h2>
             </div>
         </div>
+
         <div id="container">
             <div id="sidebar">
                  <div class="card">
                     <h3>Contato</h3>
-                    
                     <ul id="contact">
                         <li><i class="fa-solid fa-envelope"></i> iasminlhmuniz@gmail.com</li>
                         <li><i class="fa-solid fa-phone"></i> (11) 94047-8980</li>
                         <li><i class="fa-solid fa-location-dot"></i> Vila Maria Baixa, São Paulo - SP</li>
-                        <!--ícones de imagem são inseridos dentro das tags, neste caso "LI"-->
                     </ul>
-                
                 </div> 
-                
+
                 <div class="card">
                     <h3>Skills</h3>
-                   
-                    <ul><!--"IDs" sempre dentro das tags-->
-                        <li>Dados & BI: SQL, Python, Power BI (DAX e Modelagem), Looker Studio, Power Query, Estatística, Databricks 
-                            (Estudos em curso) e AWS Cloud (Básico).</li><br>
-                        <li>Ferramentas e Ambientes: Excel Avançado, VS Code, JupyterLab, SQL Server (SSMS) e Power Automate.</li>
-                        
-                    </ul>
-                
-                </div> 
-                <div class="card">
-                    <h3>FORMAÇÃO ACADÊMICA</h3>
                     <ul>
-                        <li>TECNOLOGIA EM ANÁLISE E DESENVOLVIMENTO DE SISTEMA<br><br>
-                        - Centro Universitário Anhanguera Pitágoras Ampli - Concluído (Diploma em fase de emissão)</li><br>
-                        
+                        <li><b>Dados & BI:</b> SQL, Python, Power BI (DAX e Modelagem), Looker Studio, Power Query, Estatística, Databricks (Estudos em curso) e AWS Cloud (Básico).</li>
+                        <li><b>Ferramentas & Ambientes:</b> Excel Avançado, VS Code, JupyterLab, SQL Server (SSMS) e Power Automate.</li>
+                    </ul>
+                </div> 
+
+                <div class="card">
+                    <h3>Formação Acadêmica</h3>
+                    <ul>
+                        <li>
+                            <b>Tecnologia em Análise e Desenvolvimento de Sistemas</b><br>
+                            Centro Universitário Anhanguera Pitágoras Ampli<br>
+                            <small>Concluído (Diploma em fase de emissão)</small>
+                        </li>
                     </ul>
                 </div> 
             </div>
-                
+
             <div id="content">
                 <div class="card">
                     <h3>Sobre mim</h3>
                     <p>
-                        &nbsp;&nbsp;&nbsp;    Profissional com experiência em análise de dados, automação de processos, construção de
+                        Profissional com experiência em análise de dados, automação de processos, construção de
                         dashboards e suporte à tomada de decisão. Vivência prática com SQL, Python, Power BI e ETL. Atualmente 
                         aprofundando conhecimentos em ecossistemas de Big Data (Databricks) e Cloud Computing (AWS) para otimização de
                         fluxos de dados em larga escala.
                     </p>
                 </div>
-                
-                <div class="card">
 
-                    <h3>EXPERIÊNCIA PROFISSIONAL</h3>
-                    <p><b>
-                        Telefônica Brasil S.A.</b> - <i>Analista de Dados Júnior (08/2023 – 02/2026) </i><br><br>
-                            - Desenvolvimento de relatórios gerenciais e dashboards dinâmicos no Power BI utilizando modelos estatísticos
-                        para acompanhamento de indicadores de performance (KPIs) e produtividade, garantindo maior acuracidade nos insights estratégicos.;<br>
-                            - Construção de análises preditivas no Power BI para forecast de instalações B2B, com acompanhamento de 
-                        demanda futura, capacidade produtiva e performance operacional, apoiando o planejamento estratégico da operação e a tomada de decisão dos gestores.;<br>
-                            - Automatização de processos e pipelines de dados utilizando Python, SQL e Power Automate, otimizando a 
-                        atualização de painéis corporativos;<br>
-                            - Execução de rotinas de ETL (Extração, Transformação e Carregamento), tratamento, limpeza e padronização de 
-                        grandes volumes de dados no Power BI (Power Query e modelagem DAX), com integração direta via SQL Server;<br>
-                            - Extração de dados via consultas SQL e desenvolvimento de visões no Power BI para apresentação de análises e
-                        storytellings impactantes para stakeholders, apoiando a tomada de decisão e a melhoria da performance operacional.;<br>
-                            - Elaboração de relatórios e apresentações gerenciais;<br>
-                        </p>
-                        
-                        <p>
-                            <b>BHT Logistics Solutions </b> - <i>Estagiária em Sistemas da Informação (01/2023 - 06/2023) </i><br><br>
-                            - Participação no levantamento de requisitos junto a áreas de negócio para suporte à definição de demandas e 
-                            sistemas;<br>
-                            - Execução de testes funcionais para validação de sistemas e apoio à garantia de qualidade de processos;<br>
-                            - Administração de ambiente corporativo baseado em Windows Server e Microsoft 365, com suporte à gestão de usuários e serviços;<br>
-                            - Controle e inventário de ativos de TI, contribuindo para organização, rastreabilidade e governança de recursos tecnológicos;<br>
-                            - Apoio na estruturação e manutenção de ambientes operacionais de tecnologia, garantindo suporte às rotinas da organização;<br>
-                            - Vivência em processos de governança de TI, segurança da informação e controle de acesso a recursos corporativos;<br>
-                            
-                        </p>
-                            
+                <div class="card">
+                    <h3>Experiência Profissional</h3>
+                    
+                    <p>
+                        <b>Telefônica Brasil S.A.</b><br>
+                        <i>Analista de Dados Júnior (08/2023 – 02/2026)</i>
+                    </p>
+                    <ul>
+                        <li>Desenvolvimento de relatórios gerenciais e dashboards dinâmicos no Power BI utilizando modelos estatísticos para acompanhamento de indicadores de performance (KPIs) e produtividade, garantindo maior acuracidade nos insights estratégicos.</li>
+                        <li>Construção de análises preditivas no Power BI para forecast de instalações B2B, com acompanhamento de demanda futura, capacidade produtiva e performance operacional, apoiando o planejamento estratégico da operação e a tomada de decisão dos gestores.</li>
+                        <li>Automatização de processos e pipelines de dados utilizando Python, SQL e Power Automate, otimizando a atualização de painéis corporativos.</li>
+                        <li>Execução de rotinas de ETL (Extração, Transformação e Carregamento), tratamento, limpeza e padronização de grandes volumes de dados no Power BI (Power Query e modelagem DAX), com integração direta via SQL Server.</li>
+                        <li>Extração de dados via consultas SQL e desenvolvimento de visões no Power BI para apresentação de análises e storytellings impactantes para stakeholders, apoiando a tomada de decisão e a melhoria da performance operacional.</li>
+                        <li>Elaboração de relatórios e apresentações gerenciais.</li>
+                    </ul>
+
+                    <br>
+
+                    <p>
+                        <b>BHT Logistics Solutions</b><br>
+                        <i>Estagiária em Sistemas da Informação (01/2023 - 06/2023)</i>
+                    </p>
+                    <ul>
+                        <li>Participação no levantamento de requisitos junto a áreas de negócio para suporte à definição de demandas e sistemas.</li>
+                        <li>Execução de testes funcionais para validação de sistemas e apoio à garantia de qualidade de processos.</li>
+                        <li>Administração de ambiente corporativo baseado em Windows Server e Microsoft 365, com suporte à gestão de usuários e serviços.</li>
+                        <li>Controle e inventário de ativos de TI, contribuindo para organização, rastreabilidade e governança de recursos tecnológicos.</li>
+                        <li>Apoio na estruturação e manutenção de ambientes operacionais de tecnologia, garantindo suporte às rotinas da organização.</li>
+                        <li>Vivência em processos de governança de TI, segurança da informação e controle de acesso a recursos corporativos.</li>
+                    </ul>
                 </div>
             </div>
+        </div>
 
     </body>
 </html>
